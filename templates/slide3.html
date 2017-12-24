@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{%static 'bebakas\slide3.css'%}">
+    <title>Boooo</title>
+</head>
+<body>
+<div>01111001</div>
+<div class="center">
+    <img src="{% static 'C:\Users\Plom\Desktop\bubble\bebakas\static\fe.gif' %}">
+    <div class="code" onclick="appear()"></div>
+</div>
+<div style="width: 50%">
+    <div style=" margin: 200px 0 0 200px;">Σμετς</div>
+    <div>01101111</div>
+    <div>01110101</div>
+    <div>00100110</div>
+</div>
+
+
+<div style="position: absolute; bottom: 30px;">01101101</div>
+<div style="position: absolute; bottom: 0; text-align: right; width:100%">01100101</div>
+<div class="input" id="input">
+    <form action="\bproject\code3\" method="post">
+        {% csrf_token %}
+        <input type="text" id="code" name="code" placeholder="Ωρα για νανι μικρουλα.">
+        <div class="buttons">
+            <input type="submit" id="submit">
+            <span class="cancel" onclick="disappear()">Cancel</span>
+        </div>
+    </form>
+</div>
+<audio autoplay>
+    <source src="{% static 'C:\Users\Plom\Desktop\bubble\bebakas\static\ted.mp3' %}">
+</audio>
+<script>
+    function appear()
+    {
+        document.getElementById('input').classList.add("visib");
+    }
+    function disappear()
+    {
+        document.getElementById('input').classList.remove("visib");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{%static 'bebakas\slide5.css'%}">
+    <title>:O</title>
+</head>
+<body>
+<div class="center">
+    <img src="{% static 'C:\Users\Plom\Desktop\bubble\bebakas\static\dota.jpg' %}">
+    <div class="code" onclick="appear()"></div>
+
+    <!-- This one made me late for our dates -->
+</div>
+
+<div style=" margin: 200px 200px 1000px 0;">Προυτς</div>
+
+<div class="input" id="input">
+    <form action="\bproject\code5\" method="post">
+        {% csrf_token %}
+        <input type="text" id="code" name="code" placeholder="I promise you, time is not an issue">
+        <div class="buttons">
+            <input type="submit" id="submit">
+            <span class="cancel" onclick="disappear()">Cancel</span>
+        </div>
+    </form>
+</div>
+<!-- HOHO HAHA-->
+<iframe width="1" height="1" style="display: none;"
+src="https://www.youtube.com/embed/Lxke2YUjBcM?autoplay=1">
+</iframe>
+<script>
+    function appear()
+    {
+        document.getElementById('input').classList.add("visib");
+    }
+    function disappear()
+    {
+        document.getElementById('input').classList.remove("visib");
+    }
+</script>
+</body>
+</html>

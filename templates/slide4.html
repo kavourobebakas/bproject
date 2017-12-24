@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{%static 'bebakas\slide4.css'%}">
+    <title>: )</title>
+</head>
+<body>
+<div class="advh">
+
+</div>
+
+    <div style="text-align: center; margin: 200px 200px 0 0; font-size: 20px;" ><span style="cursor: pointer" onclick="appear()">Σμιτς</span></div>
+
+<!-- Θυμασαι? -->
+<div class="input" id="input">
+    <form action="\bproject\code4\" method="post">
+        {% csrf_token %}
+        <input type="text" id="code" name="code" placeholder="Σμουτς">
+        <div class="buttons">
+            <input type="submit" id="submit">
+            <span class="cancel" onclick="disappear()">Cancel</span>
+        </div>
+    </form>
+</div>
+<audio loop autoplay>
+    <source src="{% static 'C:\Users\Plom\Desktop\bubble\bebakas\static\Hmm.mp3' %}">
+</audio>
+<iframe width="1" height="1" frameborder="0" src="{% static 'C:\Users\Plom\Desktop\bubble\bebakas\static\happy.jpg' %}"></iframe>
+<script>
+    function appear()
+    {
+        document.getElementById('input').classList.add("visib");
+    }
+    function disappear()
+    {
+        document.getElementById('input').classList.remove("visib");
+    }
+</script>
+</body>
+</html>

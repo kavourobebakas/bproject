@@ -1,0 +1,25 @@
+body
+{
+    background-color: #ece4f3;
+    margin: 0;
+}
+img
+{
+    width: 51vw;
+    height: auto;
+}
+.bebakas
+{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+.heart
+{
+    position: absolute;
+    width: 9%;
+    height: 9%;
+    cursor: pointer;
+    top: 32%;
+    left: 55%;
+}

@@ -1,0 +1,75 @@
+body
+{
+    background-color: black;
+    margin: 0;
+}
+img
+{
+    width: 100%;
+}
+.center
+{
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    width: 50%;
+}
+.code
+{
+    position: absolute;
+    width: 20%;
+    height: 7%;
+    cursor: pointer;
+    top: 73%;
+    left: 40%;
+}
+.input
+{
+    visibility: hidden;
+    position: fixed;
+    width: 20%;
+    top: 20%;
+    left: 40%;
+    background: black;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+#code
+{
+    padding: 8px 6px;
+    width: 80%;
+    margin: 10px 0 0 10px;
+    border: 2px solid black;
+}
+.cancel
+{
+    padding: 12px 7px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background: white;
+}
+#submit
+{
+    padding: 12px 7px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    background: green;
+    cursor: pointer;
+    width: 50%;
+}
+.buttons
+{
+    margin: 30px 0 0 0;
+}
+.visib
+{
+    visibility: visible;
+    opacity: 0.8;
+}

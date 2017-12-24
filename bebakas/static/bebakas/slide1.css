@@ -1,0 +1,22 @@
+body
+{
+    margin: 0;
+    background: black;
+}
+img
+{
+    width: 100%;
+}
+.center
+{
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+}
+.below
+{
+    display: block;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}

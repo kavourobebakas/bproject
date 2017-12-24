@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{%static 'bebakas\slide2.css'%}">
+    <title>Whoops</title>
+</head>
+<body>
+<div class="center">
+    <img src="{% static 'C:\Users\Plom\Desktop\bubble\bebakas\static\emmo.jpg' %}">
+    <div class="code" onclick="appear()"></div>
+    <div style="text-align: center; margin: 200px 200px 0 0;">Σμιτς</div>
+</div>
+
+<div class="input" id="input">
+    <form action="\bproject\code2\" method="post">
+        {% csrf_token %}
+        <input type="text" id="code" name="code" placeholder="Τρεχω τρεχω... Επεσα.">
+        <div class="buttons">
+            <input type="submit" id="submit">
+            <span class="cancel" onclick="disappear()">Cancel</span>
+        </div>
+    </form>
+</div>
+<!-- P(A|B) = P(B|A)P(A)/P(B)-->
+
+<audio autoplay>
+    <source src="{% static 'C:\Users\Plom\Desktop\bubble\bebakas\static\tav.mp3' %}">
+</audio>
+<script>
+    function appear()
+    {
+        document.getElementById('input').classList.add("visib");
+    }
+    function disappear()
+    {
+        document.getElementById('input').classList.remove("visib");
+    }
+</script>
+
+</body>
+</html>
